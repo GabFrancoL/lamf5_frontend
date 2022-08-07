@@ -1,38 +1,107 @@
-.App {
+@import '~antd/dist/antd.css';
+@import './variables.css';
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.main_layout {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lato', sans-serif;
+}
+
+.main_header {
+  height: 6em;
+  width: 100vw;
+  color: var(--fg1);
+  background-color: transparent;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+}
+
+.main_container_logo {
+  height: fit-content;
+  width: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.main_logo {
+  max-height: 4em;
+  width: auto;
+}
+
+.main_container_routes {
+  width: fit-content;
+}
+
+.main_routes_btn {
+  background-color: inherit;
+  border: none;
+  color: var(--fg1);
+  font-weight: 100;
+  font-size: 1.3em;
+}
+
+.main_routes_btn:hover,
+.main_routes_btn:active,
+.main_routes_btn:focus {
+  background-color: inherit;
+  color: var(--fg-contrast1);
+}
+
+.main_content {
+  background: none;
+}
+
+.main_footer {
+  height: min-content;
+  background-color: var(--bg1);
+  color: var(--fg1);
+}
+
+.main_rights, .main_social_media {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.main_social_media {
+  display: flexbox;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main_social_media_btn {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  background-color: inherit;
+  border: none;
+  color: var(--fg1);
+  font-size: 1.8em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main_social_media_btn:hover,
+.main_social_media_btn:active,
+.main_social_media_btn:focus {
+  background-color: inherit;
+  color: inherit;
+}
+
+#twitter_btn:hover {
+  color: #1da1f2;
+}
+
+#instagram_btn:hover {
+  color: #e1306c;
+}
+
+#facebook_btn:hover {
+  color: #4267b2;
+}
+
+#linkedin_btn:hover {
+  color: #0077b5;
 }
